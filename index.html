@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning TypeScript</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 style="background: linear-gradient(to right, #22ff00 0%, #0e03d6 100%); padding: 12px 16px; border-radius: 10px;">Chào mừng <b style="background: linear-gradient(to right, #ff4400 0%, #f6c810 100%); padding: 12px 16px; border-radius: 10px;" id="greeting"></b> đến với trò chơi!</h1>
+            
+        </header> 
+        <div style="display: flex; width: 80%; padding: 16px; margin: 48px auto; border: 1px solid #ddd;">
+            <section class="content" id="app" style="width: 70%;">
+            
+            </section>
+            <article style="width: 33%;">
+                <div class="border-primary">
+                  <img class="card-img-top" src="holder.js/100px180/" alt="">
+                  <div class="card-body">
+                      <h3 id="timer">00:00</h3>
+                      <button class="button-timer" onclick="countdownTimer()">tính giờ</button>
+                      <h4 id="score">Điểm số: </h4>
+                    <button class="button-huy" id="cancel">Thoát</button>
+                    <button class="button-reset" id="reset">Reset</button>
+                  </div>
+                </div>
+            </article>
+        </div>
+        
+    </main>
+    <script src="dist/app.js"></script>
+    <script src="dist/time.js"></script>
+    <script src="dist/cancel.js"></script>
+</body>
+</html>
